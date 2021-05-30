@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "origins": [
+    "mythorigins:basilisk",
+    "mythorigins:centaur",
+    "mythorigins:chimera",
+    "mythorigins:cyclops",
+    "mythorigins:elf",
+    "mythorigins:fairy",
+    "mythorigins:fenrir",
+    "mythorigins:harpy",
+    "mythorigins:hydra",
+    "mythorigins:imp",
+    "mythorigins:minotaur",
+    "mythorigins:ogre",
+    "mythorigins:phoenix",
+    "mythorigins:siren",
+    "mythorigins:werewolf"
+  ],
+  "order": 25
+}
