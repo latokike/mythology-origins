@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+	"golden_chestplate",
+	"diamond_chestplate",
+	"netherite_chestplate"
+  ]
+}

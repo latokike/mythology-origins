@@ -1,0 +1,15 @@
+{
+  "powers": [
+	"mythorigins:faery_wings",
+    "mythorigins:tiny_body",
+    "mythorigins:tiny",
+    "origins:light_armor",
+    "origins:fall_immunity",
+    "origins:more_kinetic_damage",
+    "origins:weak_arms",
+    "mythorigins:less_exhaustion"
+  ],
+  "icon": "wheat_seeds",
+  "order": 1,
+  "impact": 3
+}

@@ -1,0 +1,20 @@
+{
+  "powers": [
+	"mythorigins:sharp_feathers",
+    "mythorigins:feather_shot",
+    "mythorigins:harpy_feathers",
+    "origins:aerial_combatant",
+    "origins:carnivore",
+    "origins:fall_immunity",
+    "origins:fragile",
+    "origins:no_shield",
+    "origins:sprint_jump",
+    "origins:lay_eggs",
+    "mythorigins:feathered_head",
+    "mythorigins:light_wings",
+    "mythorigins:meat_eater"
+  ],
+  "icon": "lapis_lazuli",
+  "order": 2,
+  "impact": 2
+}

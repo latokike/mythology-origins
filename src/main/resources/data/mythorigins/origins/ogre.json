@@ -1,0 +1,13 @@
+{
+  "powers": [
+	"mythorigins:brute_force",
+    "mythorigins:giant",
+    "mythorigins:giant_dummy",
+    "origins:pumpkin_hate",
+    "origins:strong_arms",
+    "origins:strong_arms_break_speed"
+  ],
+  "icon": "gravel",
+  "order": 0,
+  "impact": 2
+}

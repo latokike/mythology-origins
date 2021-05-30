@@ -1,0 +1,13 @@
+{
+  "powers": [
+	"mythorigins:poison_breath",
+    "mythorigins:dragon_scales",
+    "origins:carnivore",
+    "origins:hotblooded",
+    "origins:more_exhaustion",
+    "mythorigins:snake_features"
+  ],
+  "icon": "emerald",
+  "order": 1,
+  "impact": 2
+}

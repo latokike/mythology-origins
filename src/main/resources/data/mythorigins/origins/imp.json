@@ -1,0 +1,15 @@
+{
+  "powers": [
+	"mythorigins:burn",
+    "mythorigins:weak_body",
+    "mythorigins:hunched",
+    "origins:fire_immunity",
+    "origins:flame_particles",
+    "origins:nether_spawn",
+    "origins:weak_arms",
+    "origins:pumpkin_hate"
+  ],
+  "icon": "flint",
+  "order": 1,
+  "impact": 3
+}

@@ -1,0 +1,9 @@
+{
+  "powers": [
+    "origins:climbing",
+    "origins:carnivore"
+  ],
+  "icon": "egg",
+  "order": 1,
+  "impact": 1
+}

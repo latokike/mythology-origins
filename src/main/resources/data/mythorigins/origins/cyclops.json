@@ -1,0 +1,16 @@
+{
+  "powers": [
+	"mythorigins:blurry_vision",
+    "mythorigins:giant",
+    "mythorigins:giant_dummy",
+    "origins:claustrophobia",
+    "origins:fall_immunity",
+    "origins:more_exhaustion",
+    "origins:more_kinetic_damage",
+    "origins:strong_arms",
+    "origins:strong_arms_break_speed"
+  ],
+  "icon": "spider_eye",
+  "order": 1,
+  "impact": 2
+}

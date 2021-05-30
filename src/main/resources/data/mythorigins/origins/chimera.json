@@ -1,0 +1,19 @@
+{
+  "powers": [
+	"mythorigins:poisonous_tail",
+    "mythorigins:quadruped",
+    "mythorigins:lions_mane",
+    "mythorigins:lion_strength",
+    "origins:carnivore",
+    "origins:cat_vision",
+    "origins:more_exhaustion",
+    "origins:nine_lives",
+    "origins:no_shield",
+    "origins:pumpkin_hate",
+    "origins:weak_arms",
+    "origins:tailwind"
+  ],
+  "icon": "glowstone",
+  "order": 1,
+  "impact": 3
+}

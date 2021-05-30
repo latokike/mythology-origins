@@ -1,0 +1,15 @@
+{
+  "powers": [
+	"mythorigins:screech",
+    "mythorigins:water_breather",
+    "origins:aquatic",
+    "origins:water_vision",
+    "origins:aqua_affinity",
+    "origins:like_water",
+    "origins:swim_speed",
+    "mythorigins:tender"
+  ],
+  "icon": "heart_of_the_sea",
+  "order": 1,
+  "impact": 3
+}

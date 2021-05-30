@@ -1,0 +1,26 @@
+{
+  "powers": [
+	"mythorigins:second_wind",
+    "mythorigins:fire_feathers",
+    "mythorigins:ablaze",
+    "origins:slow_falling",
+    "origins:flame_particles",
+    "mythorigins:water_tolerance",
+    "mythorigins:water_tolerance_dummy",
+    "mythorigins:water_tolerance_dummy_2",
+    "mythorigins:water_tolerance_dummy_3",
+    "mythorigins:water_tolerance_dummy_4",
+    "mythorigins:water_tolerance_dummy_5",
+    "mythorigins:fire_breather_1",
+    "mythorigins:fire_breather_2",
+    "mythorigins:fire_breather_3",
+    "mythorigins:fire_breather_4",
+    "mythorigins:fire_breather_5",
+    "mythorigins:fire_breather_6",
+    "origins:burning_wrath",
+    "origins:tailwind"
+  ],
+  "icon": "basalt",
+  "order": 1,
+  "impact": 3
+}

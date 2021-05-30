@@ -1,0 +1,15 @@
+{
+  "powers": [
+	"mythorigins:fanged",
+    "mythorigins:dense_bones",
+    "mythorigins:icy_past",
+    "mythorigins:quadruped",
+    "mythorigins:no_armor",
+    "origins:sprint_jump",
+    "origins:tailwind",
+    "origins:carnivore"
+  ],
+  "icon": "blue_ice",
+  "order": 1,
+  "impact": 3
+}

@@ -1,0 +1,18 @@
+{
+  "powers": [
+	"mythorigins:werewolf_like",
+    "mythorigins:full_moon",
+    "mythorigins:clawed",
+    "mythorigins:bloodlust",
+    "mythorigins:daytime",
+    "origins:sprint_jump",
+    "origins:more_exhaustion",
+    "origins:fall_immunity",
+    "origins:carnivore",
+    "mythorigins:meat_eater",
+    "mythorigins:hardened_stomach"
+  ],
+  "icon": "bone_meal",
+  "order": 1,
+  "impact": 3
+}

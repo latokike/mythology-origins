@@ -1,0 +1,13 @@
+{
+  "powers": [
+	"mythorigins:bow_master",
+    "mythorigins:weak_body",
+    "mythorigins:keen_eyesight",
+    "mythorigins:elvon_armor",
+    "origins:fall_immunity",
+    "mythorigins:less_exhaustion"
+  ],
+  "icon": "bow",
+  "order": 0,
+  "impact": 2
+}

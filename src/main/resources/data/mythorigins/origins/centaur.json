@@ -1,0 +1,16 @@
+{
+  "powers": [
+	"mythorigins:hoofed",
+    "mythorigins:hoofed_dummy",
+    "mythorigins:accurate",
+    "origins:fall_immunity",
+    "origins:sprint_jump",
+    "origins:vegetarian",
+    "origins:more_exhaustion",
+    "mythorigins:horse_body",
+    "mythorigins:arrow_crafter"
+  ],
+  "icon": "leather",
+  "order": 0,
+  "impact": 2
+}

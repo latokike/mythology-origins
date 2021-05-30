@@ -1,0 +1,17 @@
+{
+  "powers": [
+    "mythorigins:hydra",
+    "mythorigins:dragon_scales",
+    "mythorigins:three_lives",
+    "mythorigins:wither_shooter",
+    "mythorigins:explode",
+    "origins:carnivore",
+    "origins:more_exhaustion",
+    "origins:fire_immunity",
+    "origins:no_shield",
+    "mythorigins:triple_heads"
+  ],
+  "icon": "creeper_head",
+  "order": 1,
+  "impact": 3
+}

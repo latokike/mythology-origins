@@ -1,0 +1,14 @@
+{
+  "powers": [
+	"mythorigins:horns",
+    "mythorigins:axe_wielder",
+    "mythorigins:superiority",
+    "origins:strong_arms",
+    "origins:strong_arms_break_speed",
+    "mythorigins:large_torso",
+    "mythorigins:bigger"
+  ],
+  "icon": "gold_block",
+  "order": 1,
+  "impact": 3
+}
