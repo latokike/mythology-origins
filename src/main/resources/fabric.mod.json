@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "mythorigins",
+  "version": "0.1.0",
+  "name": "Myth Origins",
+  "description": "Adds Myths to the Origins mod",
+  "authors": [
+	"Latokike"
+  ],
+  "contact": {
+	"homepage": "https://github.com/Latokike/myth-origins",
+	"sources": "https://github.com/Latokike/myth-origins"
+  },
+  "license": "MIT",
+  "icon": "assets/mythorigins/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "latokike.mythorigins.common.client.MythOriginsClient"
+    ],
+	"main": [
+	  "latokike.mythorigins.common.MythOrigins"
+	]
+  },
+  "mixins": [
+	"mythorigins.mixins.json"
+  ],
+  "depends": {
+	"fabricloader": ">=0.11.0",
+	"fabric": "*",
+	"minecraft": "1.16.x",
+	"origins": ">=0.7.0",
+	"pehkui": ">=2.0.0+21w10a"
+  }
+}
