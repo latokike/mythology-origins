@@ -1,0 +1,9 @@
+{
+  "type": "origins:restrict_armor",
+  "chest": {
+    "type": "origins:ingredient",
+    "ingredient": {
+      "tag": "mythorigins:heavy_chestplates"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "type": "origins:attribute",
+  "modifiers": [
+    {
+      "attribute": "minecraft:generic.max_health",
+      "operation": "addition",
+      "value": -6
+    },
+    {
+      "attribute": "minecraft:generic.attack_knockback",
+      "operation": "addition",
+      "value": -0.5
+    },
+    {
+      "attribute": "minecraft:generic.knockback_resistance",
+      "operation": "addition",
+      "value": -0.5
+    },
+    {
+      "attribute": "minecraft:generic.attack_damage",
+      "operation": "multiply_total",
+      "value": 0.9
+    }
+  ]
+}

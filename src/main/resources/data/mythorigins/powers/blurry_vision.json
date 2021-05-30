@@ -1,0 +1,4 @@
+{
+  "type": "origins:shader",
+  "shader": "mythorigins:shaders/post/blur_vision.json"
+}

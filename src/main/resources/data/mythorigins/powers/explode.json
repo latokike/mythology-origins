@@ -1,0 +1,16 @@
+{
+  "type": "mythorigins:explode",
+  "cooldown": 600,
+  "strength": 3,
+  "break_blocks": true,
+  "self_damage": 10,
+  "hud_render": {
+    "sprite_location": "mythorigins:textures/gui/ability_bars.png",
+    "bar_index": 3
+  },
+  "key": {
+    "key": "key.origins.secondary_active",
+    "continuous": false
+  },
+  "ignitable": true
+}

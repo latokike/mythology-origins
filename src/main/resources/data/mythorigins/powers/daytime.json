@@ -1,0 +1,23 @@
+{
+  "type": "origins:conditioned_attribute",
+  "modifiers": [
+    {
+      "attribute": "minecraft:generic.armor",
+      "operation": "addition",
+      "value": -6
+    },
+    {
+      "attribute": "minecraft:generic.movement_speed",
+      "operation": "multiply_total",
+      "value": -0.5
+    },
+    {
+      "attribute": "minecraft:generic.max_health",
+      "operation": "addition",
+      "value": -10
+    }
+  ],
+  "condition": {
+    "type": "origins:daytime"
+  }
+}

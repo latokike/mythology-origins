@@ -1,0 +1,16 @@
+{
+  "type": "origins:fire_projectile",
+  "cooldown": 750,
+  "hud_render": {
+    "sprite_location": "mythorigins:textures/gui/ability_bars.png",
+    "bar_index": 8
+  },
+  "entity_type": "mythorigins:ice_ball",
+  "sound": "minecraft:block.ice.break",
+  "speed": 0.5,
+  "divergence": 0,
+  "key": {
+    "key": "key.origins.primary_active",
+    "continuous": false
+  }
+}

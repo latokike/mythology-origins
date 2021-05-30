@@ -1,0 +1,10 @@
+{
+  "type": "origins:attribute",
+  "modifier":
+  {
+    "name": "SecondWindLivesBase",
+    "attribute": "mythorigins:lives",
+    "value": 2.0,
+    "operation": "addition"
+  }
+}

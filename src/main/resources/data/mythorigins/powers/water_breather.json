@@ -1,0 +1,22 @@
+{
+  "type": "origins:action_over_time",
+  "entity_action": {
+    "type": "origins:and",
+    "actions": [
+      {
+        "type": "origins:apply_effect",
+        "effect": {
+          "effect": "minecraft:water_breathing",
+          "duration": 20,
+          "amplifier": 0
+        }
+      },
+      {
+        "type": "origins:execute_command",
+        "command": "tag @s add sirenos",
+        "permission_level": 4
+      }
+    ]
+  },
+  "interval": 1
+}

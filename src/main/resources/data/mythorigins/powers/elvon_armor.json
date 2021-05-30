@@ -1,0 +1,31 @@
+{
+  "type": "origins:restrict_armor",
+  "head": {
+    "type": "origins:ingredient",
+    "ingredient": {
+      "tag": "mythorigins:leather_armor",
+      "inverted": true
+    }
+  },
+  "chest": {
+    "type": "origins:ingredient",
+    "ingredient": {
+      "tag": "mythorigins:leather_armor",
+      "inverted": true
+    }
+  },
+  "legs": {
+    "type": "origins:ingredient",
+    "ingredient": {
+      "tag": "mythorigins:leather_armor",
+      "inverted": true
+    }
+  },
+  "feet": {
+    "type": "origins:ingredient",
+    "ingredient": {
+      "tag": "mythorigins:leather_armor",
+      "inverted": true
+    }
+  }
+}

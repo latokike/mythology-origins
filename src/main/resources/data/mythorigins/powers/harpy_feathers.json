@@ -1,0 +1,10 @@
+{
+  "type": "origins:multiple",
+  "elytra": {
+    "type": "origins:elytra_flight",
+    "render_elytra": true
+  },
+  "custom_wings": {
+    "type": "origins:simple"
+  }
+}

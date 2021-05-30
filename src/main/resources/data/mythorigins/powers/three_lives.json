@@ -1,0 +1,18 @@
+{
+  "type": "origins:attribute",
+  "modifiers":
+  [
+    {
+      "name": "LivesHealth",
+      "attribute": "minecraft:generic.max_health",
+      "value": -10.0,
+      "operation": "addition"
+    },
+    {
+      "name": "LivesBase",
+      "attribute": "mythorigins:lives",
+      "value": 3.0,
+      "operation": "addition"
+    }
+  ]
+}

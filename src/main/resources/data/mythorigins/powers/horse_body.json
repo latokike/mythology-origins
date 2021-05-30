@@ -1,0 +1,25 @@
+{
+  "type": "origins:attribute",
+  "modifiers": [
+    {
+      "attribute": "minecraft:generic.max_health",
+      "operation": "addition",
+      "value": 8
+    },
+    {
+      "attribute": "minecraft:generic.armor",
+      "operation": "addition",
+      "value": 4
+    },
+    {
+      "attribute": "minecraft:generic.knockback_resistance",
+      "operation": "addition",
+      "value": 3.5
+    },
+    {
+      "attribute": "minecraft:generic.movement_speed",
+      "operation": "multiply_total",
+      "value": 0.5
+    }
+  ]
+}

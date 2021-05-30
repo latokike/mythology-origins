@@ -1,0 +1,26 @@
+{
+  "type": "origins:multiple",
+  "better_food": {
+    "type": "origins:modify_food",
+    "item_condition": {
+      "type": "origins:ingredient",
+      "ingredient": {
+        "tag": "mythorigins:raw_meat"
+      }
+    },
+    "food_modifier": {
+      "operation": "multiply_total",
+      "value": 1.0
+    },
+    "saturation_modifier": {
+      "operation": "multiply_total",
+      "value": 1.0
+    }
+  },
+  "hunger_immunity": {
+    "type": "origins:effect_immunity",
+    "effects": [
+      "minecraft:hunger"
+    ]
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "type": "origins:attribute",
+  "modifier": {
+    "operation": "multiply_base",
+    "value": 0.5,
+    "attribute": "generic.attack_damage"
+  }
+}

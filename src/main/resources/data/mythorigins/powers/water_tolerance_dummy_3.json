@@ -1,0 +1,13 @@
+{
+  "type": "origins:action_over_time",
+  "entity_action": {
+    "type": "origins:change_resource",
+    "resource": "mythorigins:water_tolerance",
+    "change": -2
+  },
+  "interval": 2,
+  "condition": {
+    "type": "origins:in_rain"
+  },
+  "hidden": true
+}

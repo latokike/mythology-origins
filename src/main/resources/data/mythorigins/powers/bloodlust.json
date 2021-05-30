@@ -1,0 +1,25 @@
+{
+  "type": "origins:shader",
+  "shader": "mythorigins:shaders/post/bloody.json",
+  "condition": {
+    "type": "origins:or",
+    "conditions": [
+      {
+        "type": "origins:and",
+        "conditions": [
+          {
+            "type": "mythorigins:full_moon"
+          },
+          {
+            "type": "mythorigins:nighttime"
+          }
+        ]
+      },
+      {
+        "type": "origins:food_level",
+        "comparison": "<",
+        "compare_to": 10
+      }
+    ]
+  }
+}
