@@ -1,0 +1,225 @@
+{
+  "origin.mythorigins.basilisk.name": "Basiliskion",
+  "origin.mythorigins.basilisk.description": "Descendants from the legendary Basilisks, Basiliskions are able to breath poison.",
+
+  "origin.mythorigins.centaur.name": "Centauros",
+  "origin.mythorigins.centaur.description": "Centauros are very similar to the Centaurs, but they are not the same.",
+
+  "origin.mythorigins.chimera.name": "Chimerog",
+  "origin.mythorigins.chimera.description": "As relatives to the Chimera, the Chimerog posses a lot of the same abilities the Chimera have.",
+
+  "origin.mythorigins.cyclops.name": "Cylopian",
+  "origin.mythorigins.cyclops.description": "The Cyclopian often have trouble seeing, but their physical abilities are extraordinary.",
+
+  "origin.mythorigins.elf.name": "Elvon",
+  "origin.mythorigins.elf.description": "The Elvon race is extremely accurate with a bow, and also have inner magic, but aren't good at anything else.",
+
+  "origin.mythorigins.fairy.name": "Faery",
+  "origin.mythorigins.fairy.description": "Faeries aren't big, but they can easily flee using their wings, and due to their small size they're not easy to attack.",
+
+  "origin.mythorigins.fenrir.name": "Fenren",
+  "origin.mythorigins.fenrir.description": "Their cousin being the Fenrir, these animal-like beings are extremely good at hunting their prey down.",
+
+  "origin.mythorigins.harpy.name": "Harpnian",
+  "origin.mythorigins.harpy.description": "The Harpnians control the skies, but they don't fare so well once they're grounded.",
+
+  "origin.mythorigins.hydra.name": "Hydranian",
+  "origin.mythorigins.hydra.description": "These creatures are viscous, they also have three heads and are hard to kill.",
+
+  "origin.mythorigins.imp.name": "Impling",
+  "origin.mythorigins.imp.description": "These demons are much alike the Imps, however their fire abilities aren't as weak.",
+
+  "origin.mythorigins.lamia.name": "Lamian",
+  "origin.mythorigins.lamia.description": "The Lamian are snake-like creatures which are very similar to the Lamia, however, they don't need to eat children.",
+
+  "origin.mythorigins.minotaur.name": "Minotaurion",
+  "origin.mythorigins.minotaur.description": "As the cousin race to the Minotaurs, the Minotaurion wield the same weapon and physical prowess.",
+
+  "origin.mythorigins.ogre.name": "Ogrelin",
+  "origin.mythorigins.ogre.description": "Ogrelin are not very smart, but with their stupidity comes strength.",
+
+  "origin.mythorigins.phoenix.name": "Phoenixkin",
+  "origin.mythorigins.phoenix.description": "Phoenixkin are similar to Phoenixes, except they don't get reincarnated infinitely.",
+
+  "origin.mythorigins.siren.name": "Sirenos",
+  "origin.mythorigins.siren.description": "Sirenos don't have the same lullaby song as the Sirens, but they can make loud enough sounds to hurt anyone who hears it.",
+
+  "origin.mythorigins.werewolf.name": "Werewian",
+  "origin.mythorigins.werewolf.description": "The Werewian are not something you want to cross paths with on a full moon, as they are much stronger at that time.",
+
+
+  "power.mythorigins.ablaze.name": "Ablaze",
+  "power.mythorigins.ablaze.description": "You are able to set yourself ablaze by igniting your feathers.",
+
+  "power.mythorigins.accurate.name": "Accurate",
+  "power.mythorigins.accurate.description": "You are able to set yourself ablaze by igniting yourself.",
+
+  "power.mythorigins.arrow_crafter.name": "Arrow Crafter",
+  "power.mythorigins.arrow_crafter.description": "You can craft arrows more proficiently.",
+
+  "power.mythorigins.axe_wielder.name": "Axe Wielder",
+  "power.mythorigins.axe_wielder.description": "Your main weapon is the axe, and you are more efficient at attacking with an axe too.",
+
+  "power.mythorigins.bloodlust.name": "Bloodlust",
+  "power.mythorigins.bloodlust.description": "Your uncontrollable thirst for blood causes your vision to become red on occasion.",
+
+  "power.mythorigins.blurry_vision.name": "Blurry Vision",
+  "power.mythorigins.blurry_vision.description": "Your eyesight isn't very good, making it harder to see things.",
+
+  "power.mythorigins.bow_master.name": "Bow Master",
+  "power.mythorigins.bow_master.description": "Your mastery of the bow makes it so that you can do more damage with one.",
+
+  "power.mythorigins.brute_force.name": "Brute Force",
+  "power.mythorigins.brute_force.description": "Your strength is brute force.",
+
+  "power.mythorigins.burn.name": "Burn",
+  "power.mythorigins.burn.description": "You can set things on fire, even from a distance.",
+
+  "power.mythorigins.clawed.name": "Clawed",
+  "power.mythorigins.clawed.description": "Your attacks deal less knockback, but they pack more of a punch.",
+
+  "power.mythorigins.daytime.name": "Daytime",
+  "power.mythorigins.daytime.description": "You're much weaker then when it's night.",
+
+  "power.mythorigins.dense_bones.name": "Dense Bones",
+  "power.mythorigins.dense_bones.description": "Your bones are more dense than normal bones, causing you to have natural armor.",
+
+  "power.mythorigins.dragon_scales.name": "Dragon Scales",
+  "power.mythorigins.dragon_scales.description": "You possess the scales of a dragon, giving you protection.",
+
+  "power.mythorigins.explode.name": "Explode",
+  "power.mythorigins.explode.description": "You can explode at will.",
+
+  "power.mythorigins.faery_wings.name": "Faery Wings",
+  "power.mythorigins.faery_wings.description": "You have the wings of a Faery, allowing you to glide.",
+
+  "power.mythorigins.fanged.name": "Fanged",
+  "power.mythorigins.fanged.description": "You sometimes use your fangs in battle, doing damage to your opponents.",
+
+  "power.mythorigins.feather_shot.name": "Feather Shot",
+  "power.mythorigins.feather_shot.description": "You can detach your feathers, and shoot them, causing harm to whomever it hits.",
+
+  "power.mythorigins.feathered_head.name": "Feathered Head",
+  "power.mythorigins.feathered_head.description": "You're head has feathers attached to it, causing you to not be able to equip any helmet.",
+
+  "power.mythorigins.fire_breather_1.name": "Fire Breather",
+  "power.mythorigins.fire_breather_1.description": "You can breath fire, as long as you are on fire first.",
+
+  "power.mythorigins.fire_feathers.name": "Fire Feathers",
+  "power.mythorigins.fire_feathers.description": "Due to your feathers being partially made of fire, you can't be burnt.",
+
+  "power.mythorigins.full_moon.name": "Full Moon",
+  "power.mythorigins.full_moon.description": "On a full moon, you can extreme strength and speed as a result of being bloodthirsty.",
+
+  "power.mythorigins.giant.name": "Giant",
+  "power.mythorigins.giant.description": "You are much bigger than most, and are stronger too, as a result.",
+
+  "power.mythorigins.hardened_stomach.name": "Hardened Stomach",
+  "power.mythorigins.hardened_stomach.description": "Your stomach is used to raw foods, making you immune to nausea.",
+
+  "power.mythorigins.harpy_feathers.name": "Harpnian Wings",
+  "power.mythorigins.harpy_feathers.description": "You have the wings of a Harpnian.",
+
+  "power.mythorigins.hoofed.name": "Hoofed",
+  "power.mythorigins.hoofed.description": "You are quicker on land, but you can't swim as well.",
+
+  "power.mythorigins.horns.name": "Horns",
+  "power.mythorigins.horns.description": "You have Minotaurion horns.",
+
+  "power.mythorigins.horse_body.name": "Horse Body",
+  "power.mythorigins.horse_body.description": "Your body allows for more health, and also extra speed.",
+
+  "power.mythorigins.hunched.name": "Hunched",
+  "power.mythorigins.hunched.description": "You are smaller, because of being hunched over all the time.",
+
+  "power.mythorigins.hydra.name": "Hydra",
+  "power.mythorigins.hydra.description": "You have two extra heads.",
+
+  "power.mythorigins.icy_past.name": "Icy Past",
+  "power.mythorigins.icy_past.description": "You can create ice blocks, that cause multiple effects.",
+
+  "power.mythorigins.keen_eyesight.name": "Keen Eyesight",
+  "power.mythorigins.keen_eyesight.description": "Your eyesight is better than most, allowing you to see better in the dark.",
+
+  "power.mythorigins.large_torso.name": "Large Torso",
+  "power.mythorigins.large_torso.description": "You are unable to equip a chestpiece.",
+
+  "power.mythorigins.less_exhaustion.name": "Less Exhaustion",
+  "power.mythorigins.less_exhaustion.description": "You exhaust slower.",
+
+  "power.mythorigins.light_wings.name": "Light Wings",
+  "power.mythorigins.light_wings.description": "Your wings are too light to carry a heavy chesplate.",
+
+  "power.mythorigins.lion_strength.name": "Lion Strength",
+  "power.mythorigins.lion_strength.description": "Your strength is enough to rival that of a lion.",
+
+  "power.mythorigins.lions_mane.name": "Lions' Mane",
+  "power.mythorigins.lions_mane.description": "You have the mane of a lion.",
+
+  "power.mythorigins.meat_eater.name": "Meat Eater",
+  "power.mythorigins.meat_eater.description": "You are immune to hunger, and eating raw meat gives more nourishment.",
+
+  "power.mythorigins.negative_armor.name": "Weak Armor",
+  "power.mythorigins.negative_armor.description": "Armor isn't as effective on you.",
+
+  "power.mythorigins.no_armor.name": "No Armor",
+  "power.mythorigins.no_armor.description": "You can't equip armor.",
+
+  "power.mythorigins.poison_breath.name": "Poison Breath",
+  "power.mythorigins.poison_breath.description": "You can breath a poison ball, causing poison to everything within radius.",
+
+  "power.mythorigins.poisonous_tail.name": "Poisonous Tail",
+  "power.mythorigins.poisonous_tail.description": "Your tail will occasionally poison enemies.",
+
+  "power.mythorigins.quadruped.name": "Quadruped",
+  "power.mythorigins.quadruped.description": "You move on all fours, causing you to be faster.",
+
+  "power.mythorigins.screech.name": "Screech",
+  "power.mythorigins.screech.description": "You can make high-pitched noises that will damage everything close to you.",
+
+  "power.mythorigins.second_wind.name": "Second Wind",
+  "power.mythorigins.second_wind.description": "You are given a second chance before you die.",
+
+  "power.mythorigins.sharp_feathers.name": "Sharp Feathers",
+  "power.mythorigins.sharp_feathers.description": "You have two feathers on your head.",
+
+  "power.mythorigins.snake_features.name": "Snake Ancestors",
+  "power.mythorigins.snake_features.description": "You have snake-like features on your head.",
+
+  "power.mythorigins.superiority.name": "Superiority",
+  "power.mythorigins.superiority.description": "You are stronger than most people.",
+
+  "power.mythorigins.tender.name": "Tender",
+  "power.mythorigins.tender.description": "Your body is less tough than normal.",
+
+  "power.mythorigins.three_lives.name": "Three Lives",
+  "power.mythorigins.three_lives.description": "You have two extra lives before dying.",
+
+  "power.mythorigins.tiny.name": "Tiny",
+  "power.mythorigins.tiny.description": "You're much smaller than an average person.",
+
+  "power.mythorigins.tiny_body.name": "Tiny Body",
+  "power.mythorigins.tiny_body.description": "Due to being so small, your physical prowess, and your endurance, have gone down.",
+
+  "power.mythorigins.triple_heads.name": "Triple Heads",
+  "power.mythorigins.triple_heads.description": "Since you have three heads, you can't equip helmets.",
+
+  "power.mythorigins.water_breather.name": "Water Breather",
+  "power.mythorigins.water_breather.description": "You can breath in water.",
+
+  "power.mythorigins.water_tolerance.name": "Water Tolerance",
+  "power.mythorigins.water_tolerance.description": "You can only handle being in water for so long, before taking damage.",
+
+  "power.mythorigins.weak_body.name": "Weak Body",
+  "power.mythorigins.weak_body.description": "Your body is weak, making it harder to fight.",
+
+  "power.mythorigins.werewolf_like.name": "Werewolf Like",
+  "power.mythorigins.werewolf_like.description": "You have werewolf like features.",
+
+  "power.mythorigins.wither_shooter.name": "Wither Shooter",
+  "power.mythorigins.wither_shooter.description": "You are capable of shooting wither skulls.",
+  
+  
+  "death.attack.fangs": "%1$s was bitten",
+  "death.attack.fangs.player": "%1$s was bitten by %2$s"
+}
