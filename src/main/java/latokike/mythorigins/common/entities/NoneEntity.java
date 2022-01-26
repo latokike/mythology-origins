@@ -50,7 +50,7 @@ public class NoneEntity extends ThrownItemEntity {
         Entity entity = this.getOwner();
         if (hitResult.getType() != HitResult.Type.ENTITY || !((EntityHitResult)hitResult).getEntity().isPartOf(entity)) {
             if (!this.world.isClient) {
-                this.remove();
+                this.remove(RemovalReason.DISCARDED);
             }
         }
     }
@@ -58,7 +58,7 @@ public class NoneEntity extends ThrownItemEntity {
     public void tick() {
         Entity entity = this.getOwner();
         super.tick();
-        this.remove();
+        this.remove(RemovalReason.DISCARDED);
     }
 
     @Override

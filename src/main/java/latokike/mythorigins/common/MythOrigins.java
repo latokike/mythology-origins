@@ -1,8 +1,6 @@
 package latokike.mythorigins.common;
 
-import latokike.mythorigins.common.power.factory.action.BlockActions;
-import latokike.mythorigins.common.power.factory.action.EntityActions;
-import latokike.mythorigins.common.power.factory.action.ItemActions;
+
 import latokike.mythorigins.common.power.factory.condition.EntityConditions;
 import latokike.mythorigins.common.registry.*;
 import net.fabricmc.loader.api.FabricLoader;
@@ -11,14 +9,13 @@ import net.minecraft.util.Identifier;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import io.github.apace100.origins.power.Power;
-import io.github.apace100.origins.power.PowerType;
-import io.github.apace100.origins.power.PowerTypeReference;
+import io.github.apace100.apoli.power.Power;
+import io.github.apace100.apoli.power.PowerType;
+import io.github.apace100.apoli.power.PowerTypeReference;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.attribute.ClampedEntityAttribute;
 import net.minecraft.entity.attribute.EntityAttribute;
 import net.minecraft.entity.attribute.EntityAttributeInstance;
-import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
 public class MythOrigins implements ModInitializer {
@@ -59,16 +56,10 @@ public class MythOrigins implements ModInitializer {
 		});
 		LOGGER.warn("Myth Origins " + VERSION + " is initializing. Have fun!");
 
-		MOEvents.init();
 		MOEntities.init();
 		MOItems.init();
 		MOScaleTypes.init();
 		MOPowers.init();
-		MOPowers.register();
-		MOConditions.init();
-		EntityActions.init();
-		ItemActions.init();
-		BlockActions.init();
 		EntityConditions.init();
 	}
 

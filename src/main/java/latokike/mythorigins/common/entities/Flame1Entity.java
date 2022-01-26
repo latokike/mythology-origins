@@ -55,7 +55,7 @@ public class Flame1Entity extends ThrownItemEntity {
     public void tick() {
         Entity entity = this.getOwner();
         if (entity instanceof PlayerEntity && !entity.isAlive()) {
-            this.remove();
+            this.remove(RemovalReason.DISCARDED);
         } else {
             super.tick();
         }

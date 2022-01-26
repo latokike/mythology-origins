@@ -76,7 +76,7 @@ public class PoisonBreathEntity extends ThrownItemEntity {
 
                 this.world.syncWorldEvent(2006, this.getBlockPos(), this.isSilent() ? -1 : 1);
                 this.world.spawnEntity(areaEffectCloudEntity);
-                this.remove();
+                this.remove(RemovalReason.DISCARDED);
             }
         }
     }
@@ -84,7 +84,7 @@ public class PoisonBreathEntity extends ThrownItemEntity {
     public void tick() {
         Entity entity = this.getOwner();
         if (entity instanceof PlayerEntity && !entity.isAlive()) {
-            this.remove();
+            this.remove(RemovalReason.DISCARDED);
         } else {
             super.tick();
         }

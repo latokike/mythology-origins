@@ -1,10 +1,10 @@
 package latokike.mythorigins.common.power.factory.condition;
 
-import io.github.apace100.origins.power.factory.condition.ConditionFactory;
-import io.github.apace100.origins.registry.ModRegistries;
-import io.github.apace100.origins.util.SerializableData;
+import io.github.apace100.apoli.power.factory.condition.ConditionFactory;
+import io.github.apace100.apoli.registry.ApoliRegistries;
+import io.github.apace100.calio.data.SerializableData;
 import latokike.mythorigins.common.MythOrigins;
-import net.minecraft.entity.LivingEntity;
+import net.minecraft.entity.Entity;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
@@ -25,7 +25,7 @@ public class EntityConditions {
                         (data, player) ->
                                 player.world.getTimeOfDay() % 24000L > 13000L));
     }
-    private static void register(ConditionFactory<LivingEntity> conditionFactory) {
-        Registry.register(ModRegistries.ENTITY_CONDITION, conditionFactory.getSerializerId(), conditionFactory);
+    private static void register(ConditionFactory<Entity> conditionFactory) {
+        Registry.register(ApoliRegistries.ENTITY_CONDITION, conditionFactory.getSerializerId(), conditionFactory);
     }
 }

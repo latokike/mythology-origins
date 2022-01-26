@@ -1,11 +1,12 @@
 package latokike.mythorigins.common.power.factory;
 
 import com.google.gson.JsonObject;
-import io.github.apace100.origins.power.Power;
-import io.github.apace100.origins.power.PowerType;
-import io.github.apace100.origins.power.factory.condition.ConditionFactory;
-import io.github.apace100.origins.util.SerializableData;
-import io.github.apace100.origins.util.SerializableDataType;
+import io.github.apace100.apoli.data.ApoliDataTypes;
+import io.github.apace100.apoli.power.Power;
+import io.github.apace100.apoli.power.PowerType;
+import io.github.apace100.apoli.power.factory.condition.ConditionFactory;
+import io.github.apace100.calio.data.SerializableData;
+import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.network.PacketByteBuf;
 import net.minecraft.util.Identifier;
@@ -29,7 +30,7 @@ public class PowerFactory<P extends Power> {
     public latokike.mythorigins.common.power.factory.PowerFactory<P> allowCondition() {
         if(!hasConditions) {
             hasConditions = true;
-            data.add("condition", SerializableDataType.ENTITY_CONDITION, null);
+            data.add("condition", ApoliDataTypes.ENTITY_CONDITION, null);
         }
         return this;
     }
@@ -56,7 +57,7 @@ public class PowerFactory<P extends Power> {
             BiFunction<PowerType<P>, PlayerEntity, P> powerFactory = factoryConstructor.apply(dataInstance);
             P p = powerFactory.apply(pPowerType, playerEntity);
             if(hasConditions && dataInstance.isPresent("condition")) {
-                p.addCondition((ConditionFactory<PlayerEntity>.Instance) dataInstance.get("condition"));
+                p.addCondition((ConditionFactory<Entity>.Instance) dataInstance.get("condition"));
             }
             return p;
         }

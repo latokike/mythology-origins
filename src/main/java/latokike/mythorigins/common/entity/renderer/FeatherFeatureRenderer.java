@@ -12,11 +12,10 @@ import net.minecraft.client.render.entity.model.EntityModel;
 import net.minecraft.client.render.entity.model.ModelWithHead;
 import net.minecraft.client.render.model.json.ModelTransformation;
 import net.minecraft.client.util.math.MatrixStack;
-import net.minecraft.client.util.math.Vector3f;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.Items;
+import net.minecraft.util.math.*;
 
 @Environment(EnvType.CLIENT)
 public class FeatherFeatureRenderer<T extends LivingEntity, M extends EntityModel<T> & ModelWithHead> extends FeatureRenderer<T, M> {
@@ -49,9 +48,9 @@ public class FeatherFeatureRenderer<T extends LivingEntity, M extends EntityMode
 
             (this.getContextModel()).getHead().rotate(matrixStack);
             matrixStack.translate(-0.1D, -0.15D, -0.4D);
-            matrixStack.multiply(Vector3f.POSITIVE_Y.getDegreesQuaternion(270.0F));
-            matrixStack.multiply(Vector3f.POSITIVE_X.getDegreesQuaternion(25.0F));
-            matrixStack.multiply(Vector3f.POSITIVE_Z.getDegreesQuaternion(75.0F));
+            matrixStack.multiply(Vec3f.POSITIVE_Y.getDegreesQuaternion(270.0F));
+            matrixStack.multiply(Vec3f.POSITIVE_X.getDegreesQuaternion(25.0F));
+            matrixStack.multiply(Vec3f.POSITIVE_Z.getDegreesQuaternion(75.0F));
             matrixStack.scale(0.74F, -0.74F, -0.74F);
 
             MinecraftClient.getInstance().getHeldItemRenderer().renderItem(livingEntity, itemStack, ModelTransformation.Mode.HEAD, false, matrixStack, vertexConsumerProvider, i);
@@ -67,9 +66,9 @@ public class FeatherFeatureRenderer<T extends LivingEntity, M extends EntityMode
 
             (this.getContextModel()).getHead().rotate(matrixStack);
             matrixStack.translate(-0.485D, 0.125D, -0.4D);
-            matrixStack.multiply(Vector3f.POSITIVE_Y.getDegreesQuaternion(270.0F));
-            matrixStack.multiply(Vector3f.POSITIVE_X.getDegreesQuaternion(-25.0F));
-            matrixStack.multiply(Vector3f.POSITIVE_Z.getDegreesQuaternion(75.0F));
+            matrixStack.multiply(Vec3f.POSITIVE_Y.getDegreesQuaternion(270.0F));
+            matrixStack.multiply(Vec3f.POSITIVE_X.getDegreesQuaternion(-25.0F));
+            matrixStack.multiply(Vec3f.POSITIVE_Z.getDegreesQuaternion(75.0F));
             matrixStack.scale(0.74F, -0.74F, -0.74F);
 
             MinecraftClient.getInstance().getHeldItemRenderer().renderItem(livingEntity, itemStack, ModelTransformation.Mode.HEAD, false, matrixStack, vertexConsumerProvider, i);

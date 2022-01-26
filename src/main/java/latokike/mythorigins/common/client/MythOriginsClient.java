@@ -11,7 +11,6 @@ import net.fabricmc.api.Environment;
 import net.fabricmc.fabric.api.client.rendereregistry.v1.EntityRendererRegistry;
 import net.fabricmc.fabric.api.network.ClientSidePacketRegistry;
 import net.minecraft.client.MinecraftClient;
-import net.minecraft.client.render.entity.AreaEffectCloudEntityRenderer;
 import net.minecraft.client.render.entity.ArrowEntityRenderer;
 import net.minecraft.client.render.entity.FlyingItemEntityRenderer;
 import net.minecraft.client.render.entity.ProjectileEntityRenderer;
@@ -31,22 +30,20 @@ public class MythOriginsClient implements ClientModInitializer {
     public void onInitializeClient() {
 
         EntityRendererRegistry.INSTANCE.register(MOEntities.POISON_BREATH,
-                (dispatcher, context) -> new FlyingItemEntityRenderer(dispatcher, context.getItemRenderer()));
+                (context) -> new FlyingItemEntityRenderer(context));
         EntityRendererRegistry.INSTANCE.register(MOEntities.ICE_BALL,
-                (dispatcher, context) -> new FlyingItemEntityRenderer(dispatcher, context.getItemRenderer()));
+                (context) -> new FlyingItemEntityRenderer(context));
         EntityRendererRegistry.INSTANCE.register(MOEntities.NONE,
-                (dispatcher, context) -> new FlyingItemEntityRenderer(dispatcher, context.getItemRenderer()));
+                (context) -> new FlyingItemEntityRenderer(context));
         receiveEntityPacket();
-        EntityRendererRegistry.INSTANCE.register(MOEntities.MYTH_AREA_EFFECT_CLOUD,
-                (dispatcher, context) -> new AreaEffectCloudEntityRenderer(dispatcher));
 
         EntityRendererRegistry.INSTANCE.register(MOEntities.FLAME_1,
-                (dispatcher, context) -> new FlyingItemEntityRenderer(dispatcher, context.getItemRenderer()));
+                (context) -> new FlyingItemEntityRenderer(context));
         EntityRendererRegistry.INSTANCE.register(MOEntities.FLAME_2,
-                (dispatcher, context) -> new FlyingItemEntityRenderer(dispatcher, context.getItemRenderer()));
+                (context) -> new FlyingItemEntityRenderer(context));
 
-        EntityRendererRegistry.INSTANCE.register(MOEntities.ARROW_HARPY_FEATHER, (dispatcher, context) -> {
-            return new HarpyFeatherArrowEntityRenderer(dispatcher) {
+        EntityRendererRegistry.INSTANCE.register(MOEntities.ARROW_HARPY_FEATHER, (context) -> {
+            return new HarpyFeatherArrowEntityRenderer(context) {
                 @Override
                 public Identifier getTexture(HarpyFeatherArrowEntity entity) {
                     return HarpyFeatherArrowEntityRenderer.TEXTURE;
@@ -72,9 +69,9 @@ public class MythOriginsClient implements ClientModInitializer {
                     throw new IllegalStateException("Failed to create instance of entity \"" + Registry.ENTITY_TYPE.getId(et) + "\"!");
                 e.updateTrackedPosition(pos);
                 e.setPos(pos.x, pos.y, pos.z);
-                e.pitch = pitch;
-                e.yaw = yaw;
-                e.setEntityId(entityId);
+                e.setPitch(pitch);
+                e.setBodyYaw(yaw);
+                e.setId(entityId);
                 e.setUuid(uuid);
                 MinecraftClient.getInstance().world.addEntity(entityId, e);
             });

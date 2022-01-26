@@ -11,7 +11,7 @@ import net.minecraft.client.render.entity.model.EntityModel;
 import net.minecraft.client.render.entity.model.ModelWithHead;
 import net.minecraft.client.render.model.json.ModelTransformation;
 import net.minecraft.client.util.math.MatrixStack;
-import net.minecraft.client.util.math.Vector3f;
+import net.minecraft.util.math.Vec3f;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
@@ -47,7 +47,7 @@ public class LionsManeFeatureRenderer<T extends LivingEntity, M extends EntityMo
 
             (this.getContextModel()).getHead().rotate(matrixStack);
             matrixStack.translate(0.0D, -0.25D, 0.1D);
-            matrixStack.multiply(Vector3f.POSITIVE_Y.getDegreesQuaternion(180.0F));
+            matrixStack.multiply(Vec3f.POSITIVE_Y.getDegreesQuaternion(180.0F));
             matrixStack.scale(0.61F, -0.61F, -0.61F);
 
             MinecraftClient.getInstance().getHeldItemRenderer().renderItem(livingEntity, itemStack, ModelTransformation.Mode.HEAD, false, matrixStack, vertexConsumerProvider, i);

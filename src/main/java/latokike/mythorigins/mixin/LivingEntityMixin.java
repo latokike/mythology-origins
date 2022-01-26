@@ -29,6 +29,7 @@ import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 import virtuoel.pehkui.api.PehkuiConfig;
 import virtuoel.pehkui.api.ScaleType;
+import virtuoel.pehkui.api.ScaleTypes;
 
 import java.util.Optional;
 
@@ -86,13 +87,12 @@ public abstract class LivingEntityMixin extends Entity {
 
 	private void revertScale()
 	{
-		PehkuiConfig pehconf = new PehkuiConfig();
 		if ((Boolean)Optional.ofNullable((Boolean)PehkuiConfig.COMMON.keepAllScalesOnRespawn.get()).orElse(false)) {
 			int flooredSlime = (int) floor(this.getAttributeInstance(LIVES).getValue());
 			if (flooredSlime != 0)
 			{
-				ScaleType.HEIGHT.getScaleData(this).setScale(ScaleType.HEIGHT.getScaleData(this).getScale() * 1);
-				ScaleType.WIDTH.getScaleData(this).setScale(ScaleType.WIDTH.getScaleData(this).getScale() * 1);
+				ScaleTypes.HEIGHT.getScaleData(this).setScale(ScaleTypes.HEIGHT.getScaleData(this).getScale() * 1);
+				ScaleTypes.WIDTH.getScaleData(this).setScale(ScaleTypes.WIDTH.getScaleData(this).getScale() * 1);
 			}
 		}
 	}
@@ -142,8 +142,8 @@ public abstract class LivingEntityMixin extends Entity {
 					this.addStatusEffect(new StatusEffectInstance(StatusEffects.RESISTANCE, 40, 5));
 					this.addStatusEffect(new StatusEffectInstance(StatusEffects.ABSORPTION, 100, 1));
 
-					ScaleType.HEIGHT.getScaleData(this).setScale(ScaleType.HEIGHT.getScaleData(this).getScale()*1);
-					ScaleType.WIDTH.getScaleData(this).setScale(ScaleType.WIDTH.getScaleData(this).getScale()*1);
+					ScaleTypes.HEIGHT.getScaleData(this).setScale(ScaleTypes.HEIGHT.getScaleData(this).getScale()*1);
+					ScaleTypes.WIDTH.getScaleData(this).setScale(ScaleTypes.WIDTH.getScaleData(this).getScale()*1);
 
 					cir.setReturnValue(true);
 					cir.cancel();
@@ -201,8 +201,8 @@ public abstract class LivingEntityMixin extends Entity {
 					this.addStatusEffect(new StatusEffectInstance(StatusEffects.RESISTANCE, 40, 5));
 					this.addStatusEffect(new StatusEffectInstance(StatusEffects.ABSORPTION, 100, 1));
 
-					ScaleType.HEIGHT.getScaleData(this).setScale(ScaleType.HEIGHT.getScaleData(this).getScale()*1);
-					ScaleType.WIDTH.getScaleData(this).setScale(ScaleType.WIDTH.getScaleData(this).getScale()*1);
+					ScaleTypes.HEIGHT.getScaleData(this).setScale(ScaleTypes.HEIGHT.getScaleData(this).getScale()*1);
+					ScaleTypes.WIDTH.getScaleData(this).setScale(ScaleTypes.WIDTH.getScaleData(this).getScale()*1);
 
 					cir.setReturnValue(true);
 					cir.cancel();

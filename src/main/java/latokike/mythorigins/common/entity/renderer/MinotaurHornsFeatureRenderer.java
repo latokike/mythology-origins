@@ -11,7 +11,7 @@ import net.minecraft.client.render.entity.model.EntityModel;
 import net.minecraft.client.render.entity.model.ModelWithHead;
 import net.minecraft.client.render.model.json.ModelTransformation;
 import net.minecraft.client.util.math.MatrixStack;
-import net.minecraft.client.util.math.Vector3f;
+import net.minecraft.util.math.Vec3f;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
@@ -47,7 +47,7 @@ public class MinotaurHornsFeatureRenderer<T extends LivingEntity, M extends Enti
 
             (this.getContextModel()).getHead().rotate(matrixStack);
             matrixStack.translate(-0.2D, -0.3735D, 0.0D);
-            matrixStack.multiply(Vector3f.POSITIVE_Y.getDegreesQuaternion(180.0F));
+            matrixStack.multiply(Vec3f.POSITIVE_Y.getDegreesQuaternion(180.0F));
             matrixStack.scale(0.25F, -0.25F, -0.25F);
 
             MinecraftClient.getInstance().getHeldItemRenderer().renderItem(livingEntity, itemStack, ModelTransformation.Mode.HEAD, false, matrixStack, vertexConsumerProvider, i);
@@ -61,7 +61,7 @@ public class MinotaurHornsFeatureRenderer<T extends LivingEntity, M extends Enti
 
             (this.getContextModel()).getHead().rotate(matrixStack);
             matrixStack.translate(0.2D, -0.3735D, 0.0D);
-            matrixStack.multiply(Vector3f.POSITIVE_Y.getDegreesQuaternion(180.0F));
+            matrixStack.multiply(Vec3f.POSITIVE_Y.getDegreesQuaternion(180.0F));
             matrixStack.scale(0.25F, -0.25F, -0.25F);
 
             MinecraftClient.getInstance().getHeldItemRenderer().renderItem(livingEntity, itemStack, ModelTransformation.Mode.HEAD, false, matrixStack, vertexConsumerProvider, i);
@@ -76,7 +76,7 @@ public class MinotaurHornsFeatureRenderer<T extends LivingEntity, M extends Enti
 
             (this.getContextModel()).getHead().rotate(matrixStack);
             matrixStack.translate(-0.325D, -0.3725D, 0.0D);
-            matrixStack.multiply(Vector3f.POSITIVE_Y.getDegreesQuaternion(180.0F));
+            matrixStack.multiply(Vec3f.POSITIVE_Y.getDegreesQuaternion(180.0F));
             matrixStack.scale(0.175F, -0.175F, -0.175F);
 
             MinecraftClient.getInstance().getHeldItemRenderer().renderItem(livingEntity, itemStack, ModelTransformation.Mode.HEAD, false, matrixStack, vertexConsumerProvider, i);
@@ -90,7 +90,7 @@ public class MinotaurHornsFeatureRenderer<T extends LivingEntity, M extends Enti
 
             (this.getContextModel()).getHead().rotate(matrixStack);
             matrixStack.translate(0.325D, -0.3725D, 0.0D);
-            matrixStack.multiply(Vector3f.POSITIVE_Y.getDegreesQuaternion(180.0F));
+            matrixStack.multiply(Vec3f.POSITIVE_Y.getDegreesQuaternion(180.0F));
             matrixStack.scale(0.175F, -0.175F, -0.175F);
 
             MinecraftClient.getInstance().getHeldItemRenderer().renderItem(livingEntity, itemStack, ModelTransformation.Mode.HEAD, false, matrixStack, vertexConsumerProvider, i);
@@ -105,7 +105,7 @@ public class MinotaurHornsFeatureRenderer<T extends LivingEntity, M extends Enti
 
             (this.getContextModel()).getHead().rotate(matrixStack);
             matrixStack.translate(-0.375D, -0.3425D, 0.0D);
-            matrixStack.multiply(Vector3f.POSITIVE_Y.getDegreesQuaternion(180.0F));
+            matrixStack.multiply(Vec3f.POSITIVE_Y.getDegreesQuaternion(180.0F));
             matrixStack.scale(0.125F, -0.125F, -0.125F);
 
             MinecraftClient.getInstance().getHeldItemRenderer().renderItem(livingEntity, itemStack, ModelTransformation.Mode.HEAD, false, matrixStack, vertexConsumerProvider, i);
@@ -119,7 +119,7 @@ public class MinotaurHornsFeatureRenderer<T extends LivingEntity, M extends Enti
 
             (this.getContextModel()).getHead().rotate(matrixStack);
             matrixStack.translate(0.375D, -0.3425D, 0.0D);
-            matrixStack.multiply(Vector3f.POSITIVE_Y.getDegreesQuaternion(180.0F));
+            matrixStack.multiply(Vec3f.POSITIVE_Y.getDegreesQuaternion(180.0F));
             matrixStack.scale(0.125F, -0.125F, -0.125F);
 
             MinecraftClient.getInstance().getHeldItemRenderer().renderItem(livingEntity, itemStack, ModelTransformation.Mode.HEAD, false, matrixStack, vertexConsumerProvider, i);
@@ -134,7 +134,7 @@ public class MinotaurHornsFeatureRenderer<T extends LivingEntity, M extends Enti
 
             (this.getContextModel()).getHead().rotate(matrixStack);
             matrixStack.translate(-0.46D, -0.355D, 0.0D);
-            matrixStack.multiply(Vector3f.POSITIVE_Y.getDegreesQuaternion(180.0F));
+            matrixStack.multiply(Vec3f.POSITIVE_Y.getDegreesQuaternion(180.0F));
             matrixStack.scale(0.105F, -0.105F, -0.105F);
 
             MinecraftClient.getInstance().getHeldItemRenderer().renderItem(livingEntity, itemStack, ModelTransformation.Mode.HEAD, false, matrixStack, vertexConsumerProvider, i);
@@ -148,7 +148,7 @@ public class MinotaurHornsFeatureRenderer<T extends LivingEntity, M extends Enti
 
             (this.getContextModel()).getHead().rotate(matrixStack);
             matrixStack.translate(0.46D, -0.355D, 0.0D);
-            matrixStack.multiply(Vector3f.POSITIVE_Y.getDegreesQuaternion(180.0F));
+            matrixStack.multiply(Vec3f.POSITIVE_Y.getDegreesQuaternion(180.0F));
             matrixStack.scale(0.105F, -0.105F, -0.105F);
 
             MinecraftClient.getInstance().getHeldItemRenderer().renderItem(livingEntity, itemStack, ModelTransformation.Mode.HEAD, false, matrixStack, vertexConsumerProvider, i);
@@ -163,7 +163,7 @@ public class MinotaurHornsFeatureRenderer<T extends LivingEntity, M extends Enti
 
             (this.getContextModel()).getHead().rotate(matrixStack);
             matrixStack.translate(-0.51D, -0.365D, 0.0D);
-            matrixStack.multiply(Vector3f.POSITIVE_Y.getDegreesQuaternion(180.0F));
+            matrixStack.multiply(Vec3f.POSITIVE_Y.getDegreesQuaternion(180.0F));
             matrixStack.scale(0.085F, -0.085F, -0.085F);
 
             MinecraftClient.getInstance().getHeldItemRenderer().renderItem(livingEntity, itemStack, ModelTransformation.Mode.HEAD, false, matrixStack, vertexConsumerProvider, i);
@@ -177,7 +177,7 @@ public class MinotaurHornsFeatureRenderer<T extends LivingEntity, M extends Enti
 
             (this.getContextModel()).getHead().rotate(matrixStack);
             matrixStack.translate(0.51D, -0.365D, 0.0D);
-            matrixStack.multiply(Vector3f.POSITIVE_Y.getDegreesQuaternion(180.0F));
+            matrixStack.multiply(Vec3f.POSITIVE_Y.getDegreesQuaternion(180.0F));
             matrixStack.scale(0.085F, -0.085F, -0.085F);
 
             MinecraftClient.getInstance().getHeldItemRenderer().renderItem(livingEntity, itemStack, ModelTransformation.Mode.HEAD, false, matrixStack, vertexConsumerProvider, i);
