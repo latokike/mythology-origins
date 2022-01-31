@@ -1,3 +1,6 @@
+<p>&nbsp;</p>
+<p><strong><a href="https://www.curseforge.com/minecraft/mc-mods/origins"><img src="https://media.discordapp.net/attachments/817078792463187988/831319512464490496/origins_badge.png" alt="Requires Origins" width="180" height="60" /></a> <a href="https://www.curseforge.com/minecraft/mc-mods/fabric-api"><img src="https://i.imgur.com/HabVZJR.png" alt="Requires Fabric API" width="180" height="60" /></a>
+
 # Myth-Origins
 
 ## Setup
@@ -11,34 +14,19 @@ Currently, this mod adds 16 new Origins, one is unfinished, and they are all bas
 
 These Origins include:
 
-### Basiliskion (Basilisk Myth)
-
-### Centauros (Centaur Myth)
-
-### Chimerog (Chimera Myth)
-
-### Cyclopian (Cyclops Myth)
-
-### Elvon (Elf Myth)
-
-### Faery (Fairy Myth)
-
-### Fenren (Fenrir Myth)
-
-### Harpnian (Harpy Myth)
-
-### Hydranian (Hydra Myth)
-
-### Impling (Imp Myth)
-
-### Lamian (unfinished) (Lamia Myth)
-
-### Minotaurion (Minotaur Myth)
-
-### Ogrelin (Ogre Myth)
-
-### Phoenixkin (Phoenix Myth)
-
-### Sirenos (Siren Myth)
-
-### Werewian (Werewolf Myth)
+Basiliskion\
+Centauros\
+Chimerog\
+Cyclopian\
+Elvon\
+Faery\
+Fenren\
+Harpnian\
+Hydranian\
+Impling\
+Lamian (unfinished)\
+Minotaurion\
+Ogrelin\
+Phoenixkin\
+Sirenos\
+Werewian\
