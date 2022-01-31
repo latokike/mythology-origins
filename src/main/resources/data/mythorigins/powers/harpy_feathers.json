@@ -1,10 +1,5 @@
 {
-  "type": "origins:multiple",
-  "elytra": {
-    "type": "origins:elytra_flight",
-    "render_elytra": true
-  },
-  "custom_wings": {
-    "type": "origins:simple"
-  }
+  "type": "origins:elytra_flight",
+  "render_elytra": true,
+  "texture_location": "mythorigins:textures/entity/harpy_wings.png"
 }
