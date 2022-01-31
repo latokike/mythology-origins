@@ -4,7 +4,6 @@
   "package": "latokike.mythorigins.mixin",
   "compatibilityLevel": "JAVA_16",
   "mixins": [
-    "",
 		"ItemStackMixin",
 		"LivingEntityMixin",
 		"TrackTargetGoalMixin",
