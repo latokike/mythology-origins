@@ -4,17 +4,17 @@
   "package": "latokike.mythorigins.mixin",
   "compatibilityLevel": "JAVA_16",
   "mixins": [
-    "ElytraFeatureRendererMixin",
-	"ItemStackMixin",
-	"LivingEntityMixin",
-	"TrackTargetGoalMixin",
+    "",
+		"ItemStackMixin",
+		"LivingEntityMixin",
+		"TrackTargetGoalMixin",
     "PlayerEntityMixin"
   ],
   "client": [
     "PlayerEntityRendererMixin"
   ],
   "injectors": {
-	"defaultRequire": 1
+		"defaultRequire": 1
   },
   "refmap": "MythOrigins-refmap.json"
 }
