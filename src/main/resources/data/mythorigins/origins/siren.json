@@ -1,9 +1,9 @@
 {
   "powers": [
-	"mythorigins:screech",
+    "mythorigins:screech",
     "mythorigins:water_breather",
     "origins:aquatic",
-    "origins:water_vision",
+    "mythorigins:water_vision", 
     "origins:aqua_affinity",
     "origins:like_water",
     "origins:swim_speed",
