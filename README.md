@@ -29,4 +29,4 @@ Minotaurion\
 Ogrelin\
 Phoenixkin\
 Sirenos\
-Werewian\
+Werewian
