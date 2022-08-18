@@ -1,9 +1,10 @@
 package latokike.mythorigins.common.networking.packet;
 
+import io.netty.buffer.ByteBuf;
 import io.netty.buffer.Unpooled;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
-import net.fabricmc.fabric.api.network.ServerSidePacketRegistry;
+import net.fabricmc.fabric.api.networking.v1.ServerPlayNetworking;
 import net.minecraft.entity.Entity;
 import net.minecraft.network.Packet;
 import net.minecraft.network.PacketByteBuf;
@@ -25,8 +26,9 @@ public class EntitySpawnPacket {
         PacketBufUtil.writeVec3d(byteBuf, e.getPos());
         PacketBufUtil.writeAngle(byteBuf, e.getPitch());
         PacketBufUtil.writeAngle(byteBuf, e.getYaw());
-        return ServerSidePacketRegistry.INSTANCE.toPacket(packetID, byteBuf);
+        return ServerPlayNetworking.createS2CPacket(packetID, byteBuf);
     }
+
     public static final class PacketBufUtil {
 
         public static byte packAngle(float angle) {
@@ -41,7 +43,7 @@ public class EntitySpawnPacket {
             byteBuf.writeByte(packAngle(angle));
         }
 
-        public static float readAngle(PacketByteBuf byteBuf) {
+        public static float readAngle(ByteBuf byteBuf) {
             return unpackAngle(byteBuf.readByte());
         }
 

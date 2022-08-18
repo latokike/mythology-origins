@@ -1,19 +1,17 @@
 package latokike.mythorigins.common.registry;
 
-import java.util.List;
-
 import io.github.apace100.apoli.data.ApoliDataTypes;
-import io.github.apace100.apoli.power.Active;
 import io.github.apace100.apoli.power.Power;
 import io.github.apace100.apoli.power.PowerType;
 import io.github.apace100.apoli.power.PowerTypeReference;
 import io.github.apace100.apoli.power.factory.PowerFactory;
 import io.github.apace100.apoli.registry.ApoliRegistries;
-import io.github.apace100.apoli.util.HudRender;
 import io.github.apace100.calio.data.SerializableData;
 import io.github.apace100.calio.data.SerializableDataTypes;
 import latokike.mythorigins.common.MythOrigins;
-import latokike.mythorigins.common.power.*;
+import latokike.mythorigins.common.power.ExplodePower;
+import latokike.mythorigins.common.power.ModifySizePower;
+import latokike.mythorigins.common.power.SpikedPower;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
@@ -37,13 +35,12 @@ public class MOPowers {
 					(data) -> (type, player) -> {
 						ExplodePower power = new ExplodePower(type, player,
 								data.getInt("cooldown"),
-								(HudRender) data.get("hud_render"),
+								data.get("hud_render"),
 								data.getFloat("strength"),
 								data.getBoolean("break_blocks"),
 								data.getFloat("self_damage"),
 								data.getBoolean("ignitable"));
-								power.setKey((Active.Key)
-								data.get("key"));
+								power.setKey(data.get("key"));
 								return power;})
 					.allowCondition());
 

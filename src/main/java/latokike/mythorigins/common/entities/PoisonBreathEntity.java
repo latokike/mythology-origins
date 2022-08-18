@@ -1,5 +1,6 @@
 package latokike.mythorigins.common.entities;
 
+import latokike.mythorigins.common.client.MythOriginsClient;
 import latokike.mythorigins.common.networking.packet.EntitySpawnPacket;
 import latokike.mythorigins.common.registry.MOEntities;
 import latokike.mythorigins.common.registry.MOItems;
@@ -19,9 +20,7 @@ import net.minecraft.particle.ParticleTypes;
 import net.minecraft.util.hit.EntityHitResult;
 import net.minecraft.util.hit.HitResult;
 import net.minecraft.world.World;
-import latokike.mythorigins.common.client.MythOriginsClient;
 
-import java.util.Iterator;
 import java.util.List;
 
 public class PoisonBreathEntity extends ThrownItemEntity {
@@ -62,10 +61,8 @@ public class PoisonBreathEntity extends ThrownItemEntity {
                 areaEffectCloudEntity.setRadiusGrowth((7.0F - areaEffectCloudEntity.getRadius()) / (float)areaEffectCloudEntity.getDuration());
                 areaEffectCloudEntity.addEffect(new StatusEffectInstance(StatusEffects.POISON, 100, 3));
                 if (!list.isEmpty()) {
-                    Iterator var5 = list.iterator();
 
-                    while(var5.hasNext()) {
-                        LivingEntity livingEntity = (LivingEntity)var5.next();
+                    for (LivingEntity livingEntity : list) {
                         double d = this.squaredDistanceTo(livingEntity);
                         if (d < 16.0D) {
                             areaEffectCloudEntity.updatePosition(livingEntity.getX(), livingEntity.getY(), livingEntity.getZ());

@@ -4,9 +4,7 @@ import com.google.gson.JsonObject;
 import io.github.apace100.apoli.data.ApoliDataTypes;
 import io.github.apace100.apoli.power.Power;
 import io.github.apace100.apoli.power.PowerType;
-import io.github.apace100.apoli.power.factory.condition.ConditionFactory;
 import io.github.apace100.calio.data.SerializableData;
-import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.network.PacketByteBuf;
 import net.minecraft.util.Identifier;
@@ -57,7 +55,7 @@ public class PowerFactory<P extends Power> {
             BiFunction<PowerType<P>, PlayerEntity, P> powerFactory = factoryConstructor.apply(dataInstance);
             P p = powerFactory.apply(pPowerType, playerEntity);
             if(hasConditions && dataInstance.isPresent("condition")) {
-                p.addCondition((ConditionFactory<Entity>.Instance) dataInstance.get("condition"));
+                p.addCondition(dataInstance.get("condition"));
             }
             return p;
         }

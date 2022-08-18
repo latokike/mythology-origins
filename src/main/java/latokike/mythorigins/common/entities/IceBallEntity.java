@@ -3,10 +3,8 @@ package latokike.mythorigins.common.entities;
 import latokike.mythorigins.common.client.MythOriginsClient;
 import latokike.mythorigins.common.networking.packet.EntitySpawnPacket;
 import latokike.mythorigins.common.registry.MOEntities;
-import latokike.mythorigins.common.registry.MOItems;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
-import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.entity.AreaEffectCloudEntity;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityType;
@@ -23,7 +21,6 @@ import net.minecraft.util.hit.EntityHitResult;
 import net.minecraft.util.hit.HitResult;
 import net.minecraft.world.World;
 
-import java.util.Iterator;
 import java.util.List;
 
 public class IceBallEntity extends ThrownItemEntity {
@@ -66,10 +63,8 @@ public class IceBallEntity extends ThrownItemEntity {
                 areaEffectCloudEntity.addEffect(new StatusEffectInstance(StatusEffects.GLOWING, 100, 0));
                 areaEffectCloudEntity.addEffect(new StatusEffectInstance(StatusEffects.WEAKNESS, 100, 0));
                 if (!list.isEmpty()) {
-                    Iterator var5 = list.iterator();
 
-                    while(var5.hasNext()) {
-                        LivingEntity livingEntity = (LivingEntity)var5.next();
+                    for (LivingEntity livingEntity : list) {
                         double d = this.squaredDistanceTo(livingEntity);
                         if (d < 16.0D) {
                             areaEffectCloudEntity.updatePosition(livingEntity.getX(), livingEntity.getY(), livingEntity.getZ());
