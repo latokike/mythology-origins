@@ -6,7 +6,6 @@ import net.minecraft.util.registry.Registry;
 
 public class PowerFactories {
 
-    @SuppressWarnings("unchecked")
     public static void register() {
 
     }

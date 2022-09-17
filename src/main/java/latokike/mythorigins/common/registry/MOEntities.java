@@ -19,9 +19,9 @@ public class MOEntities {
     public static final EntityType<HarpyFeatherArrowEntity> ARROW_HARPY_FEATHER;
 
     static {
-        POISON_BREATH = FabricEntityTypeBuilder.<PoisonBreathEntity>create(SpawnGroup.MISC, PoisonBreathEntity::new).dimensions(EntityDimensions.fixed(0.25f, 0.25f)).trackable(64, 10).build();
-        ICE_BALL = FabricEntityTypeBuilder.<IceBallEntity>create(SpawnGroup.MISC, IceBallEntity::new).dimensions(EntityDimensions.fixed(0.25f, 0.25f)).trackable(64, 10).build();
-        NONE = FabricEntityTypeBuilder.<NoneEntity>create(SpawnGroup.MISC, NoneEntity::new).dimensions(EntityDimensions.fixed(0.25f, 0.25f)).trackable(64, 10).build();
+        POISON_BREATH = FabricEntityTypeBuilder.<PoisonBreathEntity>create(SpawnGroup.MISC, PoisonBreathEntity::new).dimensions(EntityDimensions.fixed(0.25f, 0.25f)).trackRangeBlocks(64).trackedUpdateRate(10).build();
+        ICE_BALL = FabricEntityTypeBuilder.<IceBallEntity>create(SpawnGroup.MISC, IceBallEntity::new).dimensions(EntityDimensions.fixed(0.25f, 0.25f)).trackRangeBlocks(64).trackedUpdateRate(10).build();
+        NONE = FabricEntityTypeBuilder.<NoneEntity>create(SpawnGroup.MISC, NoneEntity::new).dimensions(EntityDimensions.fixed(0.25f, 0.25f)).trackRangeBlocks(64).trackedUpdateRate(10).build();
         FLAME_1 = FabricEntityTypeBuilder.<Flame1Entity>create(SpawnGroup.MISC, Flame1Entity::new).fireImmune().dimensions(EntityDimensions.changing(0.1F, 0.1F)).build();
         FLAME_2 = FabricEntityTypeBuilder.<Flame2Entity>create(SpawnGroup.MISC, Flame2Entity::new).fireImmune().dimensions(EntityDimensions.changing(0.1F, 0.1F)).build();
 

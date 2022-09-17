@@ -10,17 +10,17 @@ import java.util.Map;
 public class MOScaleTypes {
 	private static final ScaleType[] MODIFY_SIZE_TYPES = {ScaleTypes.WIDTH, ScaleTypes.HEIGHT, ScaleTypes.DROPS};
 	
-	public static final ScaleType MODIFY_SIZE_TYPE = register(ScaleRegistries.SCALE_TYPES, "modify_size", ScaleType.Builder.create().build());
+	public static final ScaleType MODIFY_SIZE_TYPE = register(ScaleRegistries.SCALE_TYPES, ScaleType.Builder.create().build());
 	
-	public static final ScaleModifier MODIFY_SIZE_MODIFIER = register(ScaleRegistries.SCALE_MODIFIERS, "modify_size", new ScaleModifier() {
+	public static final ScaleModifier MODIFY_SIZE_MODIFIER = register(ScaleRegistries.SCALE_MODIFIERS, new ScaleModifier() {
 		@Override
 		public float modifyScale(final ScaleData scaleData, float modifiedScale, final float delta) {
 			return MODIFY_SIZE_TYPE.getScaleData(scaleData.getEntity()).getScale(delta) * modifiedScale;
 		}
 	});
 	
-	private static <T> T register(Map<Identifier, T> registry, String name, T entry) {
-		return ScaleRegistries.register(registry, new Identifier(MythOrigins.MODID, name), entry);
+	private static <T> T register(Map<Identifier, T> registry, T entry) {
+		return ScaleRegistries.register(registry, new Identifier(MythOrigins.MODID, "modify_size"), entry);
 	}
 	
 	public static void init() {

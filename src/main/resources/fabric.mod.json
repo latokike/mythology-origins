@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
   "id": "mythorigins",
-  "version": "0.1.1",
-  "name": "Myth Origins",
-  "description": "Adds Myths to the Origins mod",
+  "version": "${version}",
+  "name": "Mythology Origins",
+  "description": "Adds myths to the Origins mod",
   "authors": [
 	"Latokike"
   ],
@@ -26,10 +26,10 @@
 	"mythorigins.mixins.json"
   ],
   "depends": {
-	"fabricloader": ">=0.11.0",
-	"fabric": "*",
-	"minecraft": "1.18.x",
-	"origins": ">1.1.4",
-	"pehkui": ">=2.6.0+1.14.4-1.18"
+    "fabricloader": ">=0.12.12",
+    "fabric": "*",
+    "minecraft": "1.19.x",
+    "origins": ">=1.6.0",
+    "pehkui": ">=3.3.2"
   }
 }
