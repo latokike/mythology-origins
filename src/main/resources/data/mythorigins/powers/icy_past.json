@@ -6,7 +6,7 @@
     "bar_index": 8
   },
   "entity_type": "mythorigins:ice_ball",
-  "sound": "minecraft:block.ice.break",
+  "sound": "minecraft:block.glass.break",
   "speed": 0.5,
   "divergence": 0,
   "key": {
