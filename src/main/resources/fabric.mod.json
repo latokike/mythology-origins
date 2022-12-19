@@ -11,16 +11,16 @@
 	"homepage": "https://curseforge.com/minecraft/mc-mods/myth-origins",
 	"sources": "https://github.com/Latokike/myth-origins"
   },
-  "license": "MIT",
+  "license": "GPL-3.0",
   "icon": "assets/mythorigins/icon.png",
   "environment": "*",
   "entrypoints": {
-    "client": [
-      "latokike.mythorigins.common.client.MythOriginsClient"
-    ],
 	"main": [
 	  "latokike.mythorigins.common.MythOrigins"
-	]
+	],
+    "client": [
+      "latokike.mythorigins.common.client.MythOriginsClient"
+    ]
   },
   "mixins": [
 	"mythorigins.mixins.json"
