@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "mythorigins",
   "version": "${version}",
-  "name": "Mythology Origins",
+  "name": "Myth Origins",
   "description": "Adds myths to the Origins mod",
   "authors": [
 	"Latokike"
