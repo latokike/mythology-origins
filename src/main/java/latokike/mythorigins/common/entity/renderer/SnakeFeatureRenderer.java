@@ -53,7 +53,7 @@ public class SnakeFeatureRenderer<T extends LivingEntity, M extends EntityModel<
             matrixStack.multiply(Vec3f.POSITIVE_Y.getDegreesQuaternion(180.0F));
             matrixStack.scale(0.255F, -0.2F, -0.255F);
 
-            //MinecraftClient.getInstance().getHeldItemRenderer().renderItem(livingEntity, itemStack, ModelTransformation.Mode.HEAD, false, matrixStack, vertexConsumerProvider, i);
+            this.heldItemRenderer.renderItem(livingEntity, itemStack, ModelTransformation.Mode.HEAD, false, matrixStack, vertexConsumerProvider, i);
             matrixStack.pop();
         }
 
