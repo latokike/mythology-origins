@@ -1,17 +1,17 @@
 {
   "schemaVersion": 1,
   "id": "mythorigins",
-  "version": "0.1.1",
+  "version": "${version}",
   "name": "Myth Origins",
   "description": "Adds Myths to the Origins mod",
   "authors": [
 	"Latokike"
   ],
   "contact": {
-	"homepage": "https://curseforge.com/minecraft/mc-mods/myth-origins",
+	"homepage": "https://curseforge.com/minecraft/mc-mods/mythology-origins",
 	"sources": "https://github.com/Latokike/myth-origins"
   },
-  "license": "MIT",
+  "license": "GPL-3.0",
   "icon": "assets/mythorigins/icon.png",
   "environment": "*",
   "entrypoints": {
