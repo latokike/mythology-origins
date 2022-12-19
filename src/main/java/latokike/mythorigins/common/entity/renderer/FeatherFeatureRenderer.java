@@ -9,6 +9,8 @@ import net.minecraft.client.render.entity.feature.FeatureRenderer;
 import net.minecraft.client.render.entity.feature.FeatureRendererContext;
 import net.minecraft.client.render.entity.model.EntityModel;
 import net.minecraft.client.render.entity.model.ModelWithHead;
+import net.minecraft.client.render.item.HeldItemRenderer;
+import net.minecraft.client.render.model.json.ModelTransformation;
 import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.item.Item;
@@ -20,16 +22,18 @@ public class FeatherFeatureRenderer<T extends LivingEntity, M extends EntityMode
     private final float xScale;
     private final float yScale;
     private final float zScale;
+    private final HeldItemRenderer heldItemRenderer;
 
-    public FeatherFeatureRenderer(FeatureRendererContext<T, M> featureRendererContext) {
-        this(featureRendererContext, 1.0F, 1.0F, 1.0F);
+    public FeatherFeatureRenderer(FeatureRendererContext<T, M> context, HeldItemRenderer heldItemRenderer) {
+        this(context, 1.0F, 1.0F, 1.0F, heldItemRenderer);
     }
 
-    public FeatherFeatureRenderer(FeatureRendererContext<T, M> featureRendererContext, float f, float g, float h) {
-        super(featureRendererContext);
+    public FeatherFeatureRenderer(FeatureRendererContext<T, M> context, float f, float g, float h, HeldItemRenderer heldItemRenderer) {
+        super(context);
         this.xScale = f;
         this.yScale = g;
         this.zScale = h;
+        this.heldItemRenderer = heldItemRenderer;
     }
 
     public void render(MatrixStack matrixStack, VertexConsumerProvider vertexConsumerProvider, int i, T livingEntity, float f, float g, float h, float j, float k, float l) {
@@ -51,7 +55,7 @@ public class FeatherFeatureRenderer<T extends LivingEntity, M extends EntityMode
             matrixStack.multiply(Vec3f.POSITIVE_Z.getDegreesQuaternion(75.0F));
             matrixStack.scale(0.74F, -0.74F, -0.74F);
 
-            //MinecraftClient.getInstance().getHeldItemRenderer().renderItem(livingEntity, itemStack, ModelTransformation.Mode.HEAD, false, matrixStack, vertexConsumerProvider, i);
+            this.heldItemRenderer.renderItem(livingEntity, itemStack, ModelTransformation.Mode.HEAD, false, matrixStack, vertexConsumerProvider, i);
             matrixStack.pop();
         }
 
@@ -69,7 +73,7 @@ public class FeatherFeatureRenderer<T extends LivingEntity, M extends EntityMode
             matrixStack.multiply(Vec3f.POSITIVE_Z.getDegreesQuaternion(75.0F));
             matrixStack.scale(0.74F, -0.74F, -0.74F);
 
-            //MinecraftClient.getInstance().getHeldItemRenderer().renderItem(livingEntity, itemStack, ModelTransformation.Mode.HEAD, false, matrixStack, vertexConsumerProvider, i);
+            this.heldItemRenderer.renderItem(livingEntity, itemStack, ModelTransformation.Mode.HEAD, false, matrixStack, vertexConsumerProvider, i);
             matrixStack.pop();
         }
     }

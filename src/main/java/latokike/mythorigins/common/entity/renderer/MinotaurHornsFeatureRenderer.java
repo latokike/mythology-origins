@@ -8,11 +8,13 @@ import net.minecraft.client.render.entity.feature.FeatureRenderer;
 import net.minecraft.client.render.entity.feature.FeatureRendererContext;
 import net.minecraft.client.render.entity.model.EntityModel;
 import net.minecraft.client.render.entity.model.ModelWithHead;
+import net.minecraft.client.render.item.HeldItemRenderer;
+import net.minecraft.client.render.model.json.ModelTransformation;
 import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
+import net.minecraft.item.ItemStack;
 import net.minecraft.util.math.Vec3f;
 
 @Environment(EnvType.CLIENT)
@@ -20,16 +22,18 @@ public class MinotaurHornsFeatureRenderer<T extends LivingEntity, M extends Enti
     private final float xScale;
     private final float yScale;
     private final float zScale;
+    private final HeldItemRenderer heldItemRenderer;
 
-    public MinotaurHornsFeatureRenderer(FeatureRendererContext<T, M> featureRendererContext) {
-        this(featureRendererContext, 1.0F, 1.0F, 1.0F);
+    public MinotaurHornsFeatureRenderer(FeatureRendererContext<T, M> context, HeldItemRenderer heldItemRenderer) {
+        this(context, 1.0F, 1.0F, 1.0F, heldItemRenderer);
     }
 
-    public MinotaurHornsFeatureRenderer(FeatureRendererContext<T, M> featureRendererContext, float f, float g, float h) {
-        super(featureRendererContext);
+    public MinotaurHornsFeatureRenderer(FeatureRendererContext<T, M> context, float f, float g, float h, HeldItemRenderer heldItemRenderer) {
+        super(context);
         this.xScale = f;
         this.yScale = g;
         this.zScale = h;
+        this.heldItemRenderer = heldItemRenderer;
     }
 
     public void render(MatrixStack matrixStack, VertexConsumerProvider vertexConsumerProvider, int i, T livingEntity, float f, float g, float h, float j, float k, float l) {
@@ -48,7 +52,7 @@ public class MinotaurHornsFeatureRenderer<T extends LivingEntity, M extends Enti
             matrixStack.multiply(Vec3f.POSITIVE_Y.getDegreesQuaternion(180.0F));
             matrixStack.scale(0.25F, -0.25F, -0.25F);
 
-            //MinecraftClient.getInstance().getHeldItemRenderer().renderItem(livingEntity, itemStack, ModelTransformation.Mode.HEAD, false, matrixStack, vertexConsumerProvider, i);
+            this.heldItemRenderer.renderItem(livingEntity, itemStack, ModelTransformation.Mode.HEAD, false, matrixStack, vertexConsumerProvider, i);
             matrixStack.pop();
         }
         if (MOPowers.HORNS.isActive(livingEntity)) {
@@ -62,7 +66,7 @@ public class MinotaurHornsFeatureRenderer<T extends LivingEntity, M extends Enti
             matrixStack.multiply(Vec3f.POSITIVE_Y.getDegreesQuaternion(180.0F));
             matrixStack.scale(0.25F, -0.25F, -0.25F);
 
-            //MinecraftClient.getInstance().getHeldItemRenderer().renderItem(livingEntity, itemStack, ModelTransformation.Mode.HEAD, false, matrixStack, vertexConsumerProvider, i);
+            this.heldItemRenderer.renderItem(livingEntity, itemStack, ModelTransformation.Mode.HEAD, false, matrixStack, vertexConsumerProvider, i);
             matrixStack.pop();
         }
 
@@ -77,7 +81,7 @@ public class MinotaurHornsFeatureRenderer<T extends LivingEntity, M extends Enti
             matrixStack.multiply(Vec3f.POSITIVE_Y.getDegreesQuaternion(180.0F));
             matrixStack.scale(0.175F, -0.175F, -0.175F);
 
-            //MinecraftClient.getInstance().getHeldItemRenderer().renderItem(livingEntity, itemStack, ModelTransformation.Mode.HEAD, false, matrixStack, vertexConsumerProvider, i);
+            this.heldItemRenderer.renderItem(livingEntity, itemStack, ModelTransformation.Mode.HEAD, false, matrixStack, vertexConsumerProvider, i);
             matrixStack.pop();
         }
         if (MOPowers.HORNS.isActive(livingEntity)) {
@@ -91,7 +95,7 @@ public class MinotaurHornsFeatureRenderer<T extends LivingEntity, M extends Enti
             matrixStack.multiply(Vec3f.POSITIVE_Y.getDegreesQuaternion(180.0F));
             matrixStack.scale(0.175F, -0.175F, -0.175F);
 
-            //MinecraftClient.getInstance().getHeldItemRenderer().renderItem(livingEntity, itemStack, ModelTransformation.Mode.HEAD, false, matrixStack, vertexConsumerProvider, i);
+            this.heldItemRenderer.renderItem(livingEntity, itemStack, ModelTransformation.Mode.HEAD, false, matrixStack, vertexConsumerProvider, i);
             matrixStack.pop();
         }
 
@@ -106,7 +110,7 @@ public class MinotaurHornsFeatureRenderer<T extends LivingEntity, M extends Enti
             matrixStack.multiply(Vec3f.POSITIVE_Y.getDegreesQuaternion(180.0F));
             matrixStack.scale(0.125F, -0.125F, -0.125F);
 
-            //MinecraftClient.getInstance().getHeldItemRenderer().renderItem(livingEntity, itemStack, ModelTransformation.Mode.HEAD, false, matrixStack, vertexConsumerProvider, i);
+            this.heldItemRenderer.renderItem(livingEntity, itemStack, ModelTransformation.Mode.HEAD, false, matrixStack, vertexConsumerProvider, i);
             matrixStack.pop();
         }
         if (MOPowers.HORNS.isActive(livingEntity)) {
@@ -120,7 +124,7 @@ public class MinotaurHornsFeatureRenderer<T extends LivingEntity, M extends Enti
             matrixStack.multiply(Vec3f.POSITIVE_Y.getDegreesQuaternion(180.0F));
             matrixStack.scale(0.125F, -0.125F, -0.125F);
 
-            //MinecraftClient.getInstance().getHeldItemRenderer().renderItem(livingEntity, itemStack, ModelTransformation.Mode.HEAD, false, matrixStack, vertexConsumerProvider, i);
+            this.heldItemRenderer.renderItem(livingEntity, itemStack, ModelTransformation.Mode.HEAD, false, matrixStack, vertexConsumerProvider, i);
             matrixStack.pop();
         }
 
@@ -135,7 +139,7 @@ public class MinotaurHornsFeatureRenderer<T extends LivingEntity, M extends Enti
             matrixStack.multiply(Vec3f.POSITIVE_Y.getDegreesQuaternion(180.0F));
             matrixStack.scale(0.105F, -0.105F, -0.105F);
 
-            //MinecraftClient.getInstance().getHeldItemRenderer().renderItem(livingEntity, itemStack, ModelTransformation.Mode.HEAD, false, matrixStack, vertexConsumerProvider, i);
+            this.heldItemRenderer.renderItem(livingEntity, itemStack, ModelTransformation.Mode.HEAD, false, matrixStack, vertexConsumerProvider, i);
             matrixStack.pop();
         }
         if (MOPowers.HORNS.isActive(livingEntity)) {
@@ -149,7 +153,7 @@ public class MinotaurHornsFeatureRenderer<T extends LivingEntity, M extends Enti
             matrixStack.multiply(Vec3f.POSITIVE_Y.getDegreesQuaternion(180.0F));
             matrixStack.scale(0.105F, -0.105F, -0.105F);
 
-            //MinecraftClient.getInstance().getHeldItemRenderer().renderItem(livingEntity, itemStack, ModelTransformation.Mode.HEAD, false, matrixStack, vertexConsumerProvider, i);
+            this.heldItemRenderer.renderItem(livingEntity, itemStack, ModelTransformation.Mode.HEAD, false, matrixStack, vertexConsumerProvider, i);
             matrixStack.pop();
         }
 
@@ -164,7 +168,7 @@ public class MinotaurHornsFeatureRenderer<T extends LivingEntity, M extends Enti
             matrixStack.multiply(Vec3f.POSITIVE_Y.getDegreesQuaternion(180.0F));
             matrixStack.scale(0.085F, -0.085F, -0.085F);
 
-            //MinecraftClient.getInstance().getHeldItemRenderer().renderItem(livingEntity, itemStack, ModelTransformation.Mode.HEAD, false, matrixStack, vertexConsumerProvider, i);
+            this.heldItemRenderer.renderItem(livingEntity, itemStack, ModelTransformation.Mode.HEAD, false, matrixStack, vertexConsumerProvider, i);
             matrixStack.pop();
         }
         if (MOPowers.HORNS.isActive(livingEntity)) {
@@ -178,7 +182,7 @@ public class MinotaurHornsFeatureRenderer<T extends LivingEntity, M extends Enti
             matrixStack.multiply(Vec3f.POSITIVE_Y.getDegreesQuaternion(180.0F));
             matrixStack.scale(0.085F, -0.085F, -0.085F);
 
-            //MinecraftClient.getInstance().getHeldItemRenderer().renderItem(livingEntity, itemStack, ModelTransformation.Mode.HEAD, false, matrixStack, vertexConsumerProvider, i);
+            this.heldItemRenderer.renderItem(livingEntity, itemStack, ModelTransformation.Mode.HEAD, false, matrixStack, vertexConsumerProvider, i);
             matrixStack.pop();
         }
     }
