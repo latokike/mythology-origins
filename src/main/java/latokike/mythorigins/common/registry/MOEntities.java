@@ -1,7 +1,7 @@
 package latokike.mythorigins.common.registry;
 
 import latokike.mythorigins.common.MythOrigins;
-import latokike.mythorigins.common.entities.*;
+import latokike.mythorigins.common.entity.*;
 import net.fabricmc.fabric.api.object.builder.v1.entity.FabricEntityTypeBuilder;
 import net.minecraft.entity.EntityDimensions;
 import net.minecraft.entity.EntityType;
@@ -15,7 +15,6 @@ public class MOEntities {
     public static final EntityType<NoneEntity> NONE;
     public static final EntityType<Flame1Entity> FLAME_1;
     public static final EntityType<Flame2Entity> FLAME_2;
-
     public static final EntityType<HarpyFeatherArrowEntity> ARROW_HARPY_FEATHER;
 
     static {
@@ -24,7 +23,6 @@ public class MOEntities {
         NONE = FabricEntityTypeBuilder.<NoneEntity>create(SpawnGroup.MISC, NoneEntity::new).dimensions(EntityDimensions.fixed(0.25f, 0.25f)).trackable(64, 10).build();
         FLAME_1 = FabricEntityTypeBuilder.<Flame1Entity>create(SpawnGroup.MISC, Flame1Entity::new).fireImmune().dimensions(EntityDimensions.changing(0.1F, 0.1F)).build();
         FLAME_2 = FabricEntityTypeBuilder.<Flame2Entity>create(SpawnGroup.MISC, Flame2Entity::new).fireImmune().dimensions(EntityDimensions.changing(0.1F, 0.1F)).build();
-
         ARROW_HARPY_FEATHER = FabricEntityTypeBuilder.<HarpyFeatherArrowEntity>create(SpawnGroup.MISC, HarpyFeatherArrowEntity::new).dimensions(EntityDimensions.fixed(0.5f, 0.5f)).build();
     }
 
@@ -34,7 +32,6 @@ public class MOEntities {
         Registry.register(Registry.ENTITY_TYPE, new Identifier(MythOrigins.MODID, "none"), NONE);
         Registry.register(Registry.ENTITY_TYPE, new Identifier(MythOrigins.MODID, "flame_1"), FLAME_1);
         Registry.register(Registry.ENTITY_TYPE, new Identifier(MythOrigins.MODID, "flame_2"), FLAME_2);
-
         Registry.register(Registry.ENTITY_TYPE, new Identifier(MythOrigins.MODID, "harpy_feather"), ARROW_HARPY_FEATHER);
     }
 }

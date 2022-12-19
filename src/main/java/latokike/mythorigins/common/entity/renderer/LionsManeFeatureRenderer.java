@@ -8,14 +8,16 @@ import net.minecraft.client.render.VertexConsumerProvider;
 import net.minecraft.client.render.entity.feature.FeatureRenderer;
 import net.minecraft.client.render.entity.feature.FeatureRendererContext;
 import net.minecraft.client.render.entity.model.EntityModel;
+import net.minecraft.client.render.entity.model.EntityModelLoader;
 import net.minecraft.client.render.entity.model.ModelWithHead;
+import net.minecraft.client.render.item.HeldItemRenderer;
 import net.minecraft.client.render.model.json.ModelTransformation;
 import net.minecraft.client.util.math.MatrixStack;
-import net.minecraft.util.math.Vec3f;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
+import net.minecraft.util.math.Vec3f;
 
 @Environment(EnvType.CLIENT)
 public class LionsManeFeatureRenderer<T extends LivingEntity, M extends EntityModel<T> & ModelWithHead> extends FeatureRenderer<T, M> {
@@ -23,12 +25,12 @@ public class LionsManeFeatureRenderer<T extends LivingEntity, M extends EntityMo
     private final float yScale;
     private final float zScale;
 
-    public LionsManeFeatureRenderer(FeatureRendererContext<T, M> featureRendererContext) {
-        this(featureRendererContext, 1.0F, 1.0F, 1.0F);
+    public LionsManeFeatureRenderer(FeatureRendererContext<T, M> context, EntityModelLoader loader) {
+        this(context, loader, 1.0F, 1.0F, 1.0F);
     }
 
-    public LionsManeFeatureRenderer(FeatureRendererContext<T, M> featureRendererContext, float f, float g, float h) {
-        super(featureRendererContext);
+    public LionsManeFeatureRenderer(FeatureRendererContext<T, M> context, EntityModelLoader loader, float f, float g, float h) {
+        super(context);
         this.xScale = f;
         this.yScale = g;
         this.zScale = h;
